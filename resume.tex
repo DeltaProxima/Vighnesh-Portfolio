@@ -1,0 +1,387 @@
+%-------------------------
+% Resume in Latex
+% Author : Tejas Khairnar
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+
+
+% Set the margins
+\geometry{left=0.85cm, top=0.8cm, right=0.85cm, bottom=0.2cm}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\footnotesize{ #3}} \vspace{-0.5mm}\\ \hspace{-2.9mm}#2 
+    \end{tabular*}
+    \vspace{0mm}
+}
+
+\newcommand{\resumeExp}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-0.5mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}\vspace{1mm}
+    \end{tabular*}
+    \vspace{-6.1mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-0.5mm}\\
+        \hspace{-4.4mm} \footnotesize{\text{#2}} & \footnotesize{#4}\vspace{-0.5mm}
+    \end{tabular*}
+    \vspace{-3mm}
+}
+
+\newcommand{\resumeEdu}[5]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \small\textbf{#1} & \footnotesize{#3}\vspace{-1mm} \\
+        \hspace{-4.3mm} \footnotesize{#2} & \footnotesize{#4}\vspace{-1mm}\\
+        \hspace{-4.3mm} \footnotesize{#5}
+    \end{tabular*}
+    \vspace{-3.2mm}
+}
+
+\newcommand{\resumeAchieve}[3]
+{
+\hspace{-3.1mm}\textbf{ #1} & {#2} & \hspace{3mm}\footnotesize{#3}
+\vspace{0mm}\\
+}
+
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=-2.5mm]}
+
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-1.5mm}}
+
+\renewcommand{\arraystretch}{1}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+\newcommand{\name}{Vighnesh Deshpande} % Your Name
+\newcommand{\course}{B.Tech -Computer Science and Engineering} % Your Course
+\newcommand{\roll}{200102112} % Your Roll No.
+\newcommand{\phone}{9819532497 } % Your Phone Number
+\newcommand{\emaila}{vadeshpande2002@gmail.com} %Email 1
+\newcommand{\github}{DeltaProxima} %Github
+\newcommand{\website}{https://deltaproxima.github.io/Vighnesh-Portfolio/index.html} %Website
+\newcommand{\linkedin}{vighnesh3802} %linkedin
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+
+%----------HEADING-----------------
+\begin{center}
+    \LARGE{\textbf{\name}}
+\end{center}
+\vspace{-5mm}
+\begin{center}
+     \href{https://github.com/\github}{\faGithub \hspace{0.2mm} GitHub} |  \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedinSquare \hspace{0.2mm} LinkedIn} | \href{mailto:\emaila}{\faSend \hspace{0.2mm} \emaila} | \faPhone \hspace{0.2mm} +91-\phone | \href{https://deltaproxima.github.io/Vighnesh-Portfolio/index.html}{\faGlobe \hspace{0.2mm} Website} 
+\end{center}
+\vspace{-3mm}
+
+%-----------EDUCATION-----------------
+
+\vspace{-2.5mm}
+\section{Education}
+
+\resumeSubHeadingListStart
+\resumeEdu
+{Indian Institute of Technology Guwahati, India} 
+{Bachelors of Technology in Electronics and Communication Engineering} 
+{Nov 2020 - Jun 2024} %Event Dates
+{GPA: 8.72/10.0} %Website
+{}
+\resumeSubHeadingListEnd
+\vspace{-6.5mm}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeExp
+{Oracle India Private Limited}
+{Member of Technical Staff 1}
+{June 2024 - Present}
+{Bengaluru}
+\resumeItemListStart
+\item[$\bullet$]Led the architecture and end-to-end development of Oracle Support’s \textbf{Unified Patching \& Upgrade Troubleshooting Framework} in \textbf{Java}, automating log acquisition, cross-log error correlation, workflow orchestration, and search–based recommendations, now resolving \textbf{~4\% of all Oracle Database Service Requests} and improving global support efficiency.
+\item[$\bullet$] Contributed to the development of a generalized, \textbf{config driven Parsing Engine} in \textbf{Java} that enables automation developers to define \textbf{parsing logic as rule files}; the engine dynamically interprets these configs to extract structured insights from heterogeneous log formats, powering large portions of the troubleshooting framework’s automation and \textbf{significantly reducing parser development time}.
+    \item[$\bullet$] Built OASIS, a \textbf{multi-agent LLM workflow builder} that lets support teams create their own AI-driven troubleshooting pipelines, owned \textbf{backend architecture (Python), context management, RAG-based intent search, tool-integration framework, and major frontend components (Next.js)}.
+\resumeItemListEnd
+
+\vspace{1mm}
+\resumeExp
+{Oracle India Private Limited}
+{Software Development Intern}
+{May 2023 - July 2023}
+{Remote}
+\resumeItemListStart
+\item[$\bullet$] Designed a \textbf{fault-tolerant backup microservice} using \textbf{Spring Boot} in \textbf{Java} capable of handling multi-gigabyte datasets, implementing \textbf{chunked transfer} and \textbf{resumable uploads} to ensure data integrity during network disruptions.
+\item[$\bullet$] Optimized database interaction for high-throughput transfers by implementing \textbf{custom SQL pagination}, preventing memory stalls during large-scale data retrieval.
+% Implemented \textbf{Rate Limiting and Circuit Breakers} to ensure system reliability and efficiency.
+\item[$\bullet$] Built and deployed a full testing dashboard in \textbf{React}, containerized the services using \textbf{Docker and Kubernetes}, and set up \textbf{Eureka Service Discovery} along with \textbf{Prometheus + Grafana} monitoring to ensure scalable, observable operations.
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+\section{Research Projects}
+\resumeSubHeadingListStart
+\resumeProject
+{Optimal Placement of Aerial Base Stations in Cell Free Networks}
+{Bachelor’s Thesis Project, Prof. Arghyadip Roy and Prof. Salil Kashyap, IIT Guwahati}
+{Aug 2022 - Present}
+{\href{https://drive.google.com/file/d/1utQ1DY7YSeulrJQqNorrx63r-JD6pg7w/view?usp=sharing}{\underline{Report}}}
+\resumeItemListStart
+\item[$\bullet$] Implemented a \textbf{GS-GB optimization method using Gibbs Sampling} and \textbf{Gradient Refinement} to maximize min-SINR and enhance coverage stability in dynamic cell-free networks.
+\item[$\bullet$] Developed a scalable \textbf{PPO based Deep Reinforcement Learning policy} that handled high-dimensional network control for real-time Access Point (AP) placement decisions. Also built a simulator to visualize the movement of the APs.
+\item[$\bullet$] Developed a \textbf{custom drone integrated with a wireless networking unit} to prototype and assess emergency communication coverage during natural calamities, demonstrating strong gains through alternate Line of Sight creation.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+\section{Volunteering Work}
+\resumeSubHeadingListStart
+
+\resumeProject
+{People+ai}
+{Volunteer Software Developer} %Project Name, Location Name
+{Oct 2024 -  Dec 2025} %Event Dates
+{\href{https://github.com/PeoplePlusAI/occ-hack-gui}{\underline{OCC}}| \href{https://github.com/PeoplePlusAI/CtAI-engine}{\underline{City AI Engine}} } 
+\resumeItemListStart
+\item[$\bullet$] Built and field-tested the City AI Engine, a \textbf{multimodal LLM-based system that grades walkability} from citizen-uploaded road images and generates geospatial road-quality maps for government planners, validated through real-time deployment at a Bangalore walkathon.
+\item[$\bullet$] Developed an \textbf{interoperable compute-discovery POC} for the Open Cloud Compute (OCC) initiative, designing a vendor-neutral marketplace layer using standardized APIs that enabled cross-vendor comparison and provisioning across partners
+
+\resumeItemListEnd
+
+% \resumeProject
+% {People+ai}
+% {Volunteer Software Developer} %Project Name, Location Name
+% {Oct 2024 -  Dec 2025} %Event Dates
+% {\href{https://github.com/PeoplePlusAI/occ-hack-gui}{\underline{OCC}}| \href{https://github.com/PeoplePlusAI/CtAI-engine}{\underline{City AI Engine}} } 
+% \resumeItemListStart
+% \item[$\bullet$] Built the City AI Engine, a multimodal vision system that used an LLM-based rubric to grade walkability from citizen-uploaded road images and generate structured scores for geospatial mapping used by government planners.
+% \item[$\bullet$]Deployed the system during a live Bangalore walkathon to stream real-time road-quality insights, surfacing infrastructure gaps for urban governance teams.
+% \item[$\bullet$]Developed an interoperable cloud-compute discovery POC for the Open Cloud Compute (OCC) initiative, an open ecosystem creating standardized APIs for accessing decentralized micro–data-center resources.
+% \item[$\bullet$]esigned a portable marketplace layer using open, vendor-neutral APIs that enabled cross-vendor comparison and provisioning, integrating offerings from industri
+
+% \resumeItemListEnd
+
+% \vspace{-5.5mm}
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProject
+{FPGA Implementation of Euler-Modeled Spiking Neural Networks} %Project Name
+{Course Project for EEE605 Machine Learning Architectures} %Project Name, Location Name
+{Mar 2024 - May 2024} %Event Dates
+{\href{https://github.com/DeltaProxima/Spiking_NN_Verilog}{\underline{GitHub}}} %Website
+\resumeItemListStart
+\item[$\bullet$]Designed and implemented a two-layer \textbf{Spiking Neural Network} using \textbf{Poisson spike generators} and \textbf{LIF neurons}, applying Euler-based numerical modeling to capture biologically realistic temporal dynamics.
+\item[$\bullet$] Developed modular Verilog components, including \textbf{spike generators, LIF neuron units}, and interconnect logic and validated system behavior through comprehensive testbench simulations of \textbf{membrane potentials, spike timing, and refractory cycles}. 
+\item[$\bullet$]Added IEEE-754 \textbf{32-bit floating-point support} by integrating \textbf{priority encoders, arithmetic modules, and comparators}, demonstrating correct functionality in both pre and post-synthesis FPGA simulations. 
+\resumeItemListEnd
+\newpage
+\resumeProject
+{Placement Portal}
+{Student's Web Committee,  IIT Guwahati} %Project Name, Location Name
+{Aug 2022 -  July 2023} %Event Dates
+{\href{https://iitg.ac.in/placements/auth}{\underline{Website}} | \href{https://youtu.be/mcYf1eeTGT0?si=li9JHw7BYFjo53d9}{\underline{Demo}}} 
+\resumeItemListStart
+\item[$\bullet$] Led the development of IIT Guwahati’s official recruitment management portal, the platform that runs the institute’s annual job fair style hiring season, supporting  \textbf{1500+ students and 200+ companies} with a team of 15 developers.
+\item[$\bullet$] Built key \textbf{frontend and backend features} for student registration, company registration, job applications, candidate tracking, and scheduling of tests and interviews, ensuring smooth operations at large scale.
+\item[$\bullet$] \textbf{Implemented automated notifications} for new job postings, and assessment results, improving communication and reducing manual coordination for students and recruiters.
+\resumeItemListEnd
+\vspace{4mm}
+\resumeProject
+{Election Portal}
+{Student's Web Committee,  IIT Guwahati} %Project Name, Location Name
+{Aug 2022 -  July 2023} %Event Dates
+{\href{https://swc.iitg.ac.in/election_portal/}{\underline{Website}}} 
+\resumeItemListStart
+\item[$\bullet$] Developed a secure end-to-end platform for IIT Guwahati’s Student Body Elections, facilitating \textbf{6000+ students} through candidate registration, screening, voting, vote counting, and result declaration.
+\item[$\bullet$] \textbf{Added client-side vote encryption} with admin-controlled decryption keys to ensure fair elections, and contributed to \textbf{frontend development, integration, and deployment} of the system.
+
+\resumeItemListEnd
+
+\vspace{4mm}
+
+\resumeProject
+{Last Mile Delivery Optimization} %Project Name
+{Inter IIT Tech Meet 11.0, Kanpur} %Project Name, Location Name
+{Jan 2023 - Feb 2023} %Event Dates
+{\href{https://github.com/soul0101/Last-Mile-Delivery-Optimization-InterIIT-TechMeet}{\underline{GitHub}}} %Website
+\resumeItemListStart
+\item[$\bullet$] Built a last-mile delivery optimization system using OR-Tools by modelling the problem as a \textbf{Capacitated Vehicle Routing Problem} with dynamic pickups, using OSRM data, and adding \textbf{3D Bin Packing} for efficient bag arrangement.
+\item[$\bullet$]Created a smart order prioritization method using \textbf{delivery date penalties and location-density scores}, which improved route planning and reduced the number of orders carried over to the next day.
+\item[$\bullet$] Improved the system’s scalability by adding features like \textbf{dynamic rerouting, weather based cost updates, better load balancing}, and clustering using the \textbf{Sweep Algorithm}, allowing it to handle \textbf{large datasets (up to 5000+ orders)} while still staying close to the \textbf{best-known solutions (4–12\% gap)}.
+\resumeItemListEnd
+
+\vspace{4mm}
+\resumeProject
+{Deep Learning–Based Loop Closure Detection for Visual SLAM} %Project Name
+{Course Project for CS590 Deep Learning} %Project Name, Location Name
+{Oct 2024 -Nov 2024} %Event Dates
+{\href{https://github.com/ayushavi1/DL_Project_Team_Mavericks}{\underline{GitHub}}} %Website
+\resumeItemListStart
+\item[$\bullet$] Built a deep-learning-based \textbf{Loop Closure Detection system} using \textbf{EfficientNet encoders} and \textbf{triplet-loss contrastive training}, achieving significantly improved feature retrieval accuracy for \textbf{Visual SLAM}.
+\item[$\bullet$] Designed a sequence-descriptor matching framework that enhanced place-recognition robustness and consistently \textbf{boosted Recall@K performance} in ablation studies.
+\item[$\bullet$] Developed a scalable \textbf{image-retrieval pipeline} using \textbf{PASS-based feature storage} and validated it through end-to-end training, benchmarking, and small-scale localization demos.
+\resumeItemListEnd
+
+\vspace{4mm}
+
+\resumeProject
+{HMM Based Sequential Network Attack Detection} %Project Name
+{Course Project for EE336 Modelling and Simulation of Dynamic Systems} %Project Name, Location Name
+{Mar 2023 - Apr 2023} %Event Dates
+{\href{https://github.com/DeltaProxima/StochasticProject}{\underline{GitHub}}} %Website
+\resumeItemListStart
+\item[$\bullet$] Developed a \textbf{Hidden Markov Model} based intrusion detection framework that infers cyber-attack stages from noisy alert sequences, enabling effective identification of malicious activity beyond raw alert patterns.
+\item[$\bullet$] Implemented the \textbf{Baum–Welch} algorithm to learn optimal transition and emission probabilities from real alert data, and applied the \textbf{Viterbi algorithm} to accurately predict the most likely attack state sequence.
+\item[$\bullet$]Achieved \textbf{strong prediction accuracy} under uniform initialization, validating HMMs as a reliable tool for early attack detection and state forecasting in network security. 
+\resumeItemListEnd
+\vspace{4mm}
+
+\resumeProject
+{ShopAI: Conversational Outfit Recommender} %Project Name
+{Flipkart Grid 5.0 Semi-Finals} %Project Name, Location Name
+{August 2023} %Event Dates
+{\href{https://github.com/AmreshSinha/ShopAI/}{\underline{GitHub}}} %Website
+\resumeItemListStart
+\item[$\bullet$] Developed a \textbf{Conversational Chat Interface} to recommend fashionable outfits to users according to their needs.
+\item[$\bullet$] \textbf{Scraped data about recent trends} from Instagram and interpreted them using \textbf{GCP Vertex AI's Image Captioning Service} and generated outputs using \textbf{OpenAI's GPT 3.5 Turbo LLM}. The interface was built using \textbf{React.js} and \textbf{FastAPI}.
+\item[$\bullet$] Personalized inference using \textbf{chain-of-thought prompting}, purchase history, browsing data along with live cart details.
+\resumeItemListEnd
+
+
+
+% \resumeProject
+% {Election Portal} %Project Name
+% {Student's Web Committee, IIT Guwahati} %Project Name, Location Name
+% {Mar 2022 - Apr 2022} %Event Dates
+% {\href{https://swc.iitg.ac.in/election_portal/}{\underline{Website}}} %Website
+% \resumeItemListStart
+% \item[$\bullet$] Developed an end-to-end solution for conducting a secure and transparent Students’ Gymkhana Elections, facilitating over \textbf{6000+ students} in casting votes and managing the entire electoral process from \textbf{candidate registration to voting}.
+% \item[$\bullet$] Worked on several front-end components and pages like \textbf{login, OTP verification, candidate profile, admin panel, status screens and image crop} in \textbf{React.js}
+% \resumeItemListEnd
+\vspace{4mm}
+
+% \resumeProject
+% {Other Projects}{}{}{}
+% \vspace{-3.5mm}
+% \resumeItemListStart
+% \item[$\bullet$] \textbf{Analysis of Online Multi-Armed Bandits with Markovian Rewards  \raisebox{-0.3mm}{\href{https://github.com/DeltaProxima/RL_Project}{\footnotesize\faExternalLink}} :} Analyzed performance of UCB and KL-UCB Algorithms on Multi Armed Bandits to compare relative effectiveness 
+ 
+% \item[$\bullet$] \textbf{Event Scheduler \raisebox{-0.3mm}{\href{https://github.com/Anurag-ravi/event_scheduler_frontend/}{\footnotesize\faExternalLink}} :} Built a web application using \textbf{React} and \textbf{Django} to facilitate the functioning of clubs in IITG.
+% \item[$\bullet$] \textbf{Digital Alpha’s SEC Filing Analyzer \raisebox{-0.3mm}{\href{https://github.com/bajajtushar094/Digital-Alpha-Inter-IIT-TechMeet-10.0}{\footnotesize\faExternalLink}} :} Developed an interactive dashboard which helps investors make wise decisions by looking at the charts and data ( Inter IIT Tech Meet 10.0 )
+
+
+\vspace{-6.5mm}
+% \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\vspace{0.2mm}
+
+\small{\begin{tabular*}{\textwidth}[t]{p{0.5\textwidth} p{0.5\textwidth}}
+
+\hspace{-3.1mm}{\textbf{ Programming languages:} C++, C, Python, Java, JS, Perl} & {\textbf{Web Technologies:} Spring Boot, Django, Node.js, React.js} \\  
+\hspace{-3.1mm}{\textbf{  DevOps:} Docker, Kubernetes, Helm, Rancher} & {\textbf{Miscellaneous:} SQL, MATLAB, Git, Shell, Latex}
+\end{tabular*}}
+
+
+\vspace{-5.5mm}
+
+% \section{Achievements}
+% \vspace{0.2mm}
+% \small{\begin{tabular*}{\textwidth}[t]{p{0.22\textwidth} p{0.68\textwidth}@{\extracolsep{\fill}}r}
+
+% \resumeAchieve{InterIIT Tech Meet 10.0}{Secured \textbf{Gold Medal} in Digital Alpha's SEC Filing Analyzer Problem Statement}{2022}
+
+% \resumeAchieve{EnCode Hackathon 2022}{Secured \textbf{First} position amongst 180+ teams in EnCode Hackathon 2022}{2022}
+
+
+% \end{tabular*}}
+
+\vspace{1mm}
+
+\section{Relevant Coursework}
+\vspace{0.2mm}
+
+
+\small{\begin{tabular*}{\textwidth}[t]{p{\textwidth}}
+\hspace{-3.1mm}\textbf{ Computer Science: }{Data Structures \& Algorithms, Operating Systems, Computer Networks, Software Engineering}\\
+\hspace{-3.1mm}\textbf{ Mathematics: }{Probability and Random Processes, Linear Algebra, Game Theory and Economics}\\
+\hspace{-3.1mm}\textbf{ Other: }{Deep Learning, Reinforcement Learning, Information Theory, Modelling and Simulation of Stochastic Systems,\\Fuzzy Logic and Neural Networks, Machine Learning Architectures}
+\end{tabular*}}
+
+\vspace{-3.5mm}
+\section{Positions of Responsibility}
+\vspace{-0.4mm}
+
+\resumeSubHeadingListStart
+\resumePOR{\textbf{Overall Coordinator, Student's Web Committee}} % Position
+{Leading a team of 50+ Developers working to build products to be used by the 6000+ campus students}{\raisebox{0.75pt}{2023 - 2024}.}
+\vspace{0.5mm}
+\resumePOR{\textbf{Contingent Manager, Inter IIT Tech Meet 12.0}}
+{Managed and led a team of 80+ students to 4th position in Inter IIT Tech Meet 12.0 hed at IIT Madras.}
+{\raisebox{0.75pt}{2023 - 2024}}
+
+\resumeSubHeadingListEnd
+\hspace*{-2mm}\rule{1.030\textwidth}{0.1mm}
+\vspace{0mm}
+
+%-------------------------------------------
+\end{document}
+
